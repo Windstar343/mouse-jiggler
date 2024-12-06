@@ -9,10 +9,10 @@ move_mouse = False
 def wiggle_mouse():
     while move_mouse:
         x, y = pyautogui.position()
-        x += random.randint(-50, 50)
-        y += random.randint(-50, 50)
+        x += random.randint(-100, 100)
+        y += random.randint(-100, 100)
         pyautogui.moveTo(x, y, duration=1)
-        time.sleep(5)
+        time.sleep(3)
 
 def on_press(key):
     global move_mouse

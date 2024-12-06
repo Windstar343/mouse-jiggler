@@ -25,13 +25,13 @@ python mouse_jiggler.py
 
 ## 📄 Code Overview
 ### Main Components:
-- Mouse Wiggling: The wiggle_mouse function moves the mouse to random nearby positions every 5 seconds.
+- Mouse Wiggling: The wiggle_mouse function moves the mouse to random nearby positions every 3 seconds.
 - Keyboard Listener: The script listens for F5 key presses to toggle the jiggler on and off.
 
 ### Key Functions:
 ```python
 def wiggle_mouse():
-    # Moves the mouse randomly every 5 seconds when active.
+    # Moves the mouse randomly every 3 seconds when active.
     
 def on_press(key):
     # Toggles the jiggler with the F5 key.
@@ -40,7 +40,7 @@ def on_press(key):
 ## 🖼️ Preview
 When activated, the script:
 
-- Randomly moves the mouse by ±50 pixels.
+- Randomly moves the mouse by ±100 pixels.
 - Displays a message in the terminal:
 ```arduino
 Mouse jiggler started. Press F5 to stop.
