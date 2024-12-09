@@ -4,6 +4,8 @@ import time
 import random
 from pynput import keyboard
 
+pyautogui.FAILSAFE = False
+
 move_mouse = False
 
 def wiggle_mouse():
