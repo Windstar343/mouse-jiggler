@@ -4,7 +4,7 @@ A simple Python script to keep your computer active by wiggling the mouse. Activ
 
 ## 🚀 Features
 - **Random Mouse Movements**: Simulates natural mouse behavior by moving to random positions.
-- **Toggle Control**: Start or stop the jiggler anytime using the `F5` key.
+- **Toggle Control**: Start or stop the jiggler anytime using the `F5` key. `F9` to center the mouse and `F10` to exit the program.
 - **Lightweight & Easy to Use**: Requires minimal setup and runs in the background.
 
 ## 🛠️ Requirements
@@ -22,6 +22,8 @@ pip install pyautogui pynput
 python mouse_jiggler.py
 ```
 4. Press F5 to start or stop the mouse jiggler.
+5. Press F9 to center the mouse.
+6. Press F10 to exit the program.
 
 ## 📄 Code Overview
 ### Main Components:
@@ -34,7 +36,7 @@ def wiggle_mouse():
     # Moves the mouse randomly every 3 seconds when active.
     
 def on_press(key):
-    # Toggles the jiggler with the F5 key.
+    # Toggles the Controls with the F5, F9 and F10 key.
 ```
 
 ## 🖼️ Preview
@@ -43,7 +45,9 @@ When activated, the script:
 - Randomly moves the mouse by ±100 pixels.
 - Displays a message in the terminal:
 ```arduino
-Mouse jiggler started. Press F5 to stop.
+Press F5 to start/stop the mouse jiggler.
+Press F9 to center the mouse.
+Press F10 to exit the program.
 ```
 
 ## 🔒 Notes
